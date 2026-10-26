@@ -1,0 +1,100 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Seruni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">SERUNI.</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#fasilitas">Fasilitas</a>
+            <a href="#kamar">Kamar</a>
+            <a href="#booking">Reservasi</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Selamat Datang di Hotel Seruni</h1>
+            <p>Tempat istirahat nyaman dengan harga bersahabat.</p>
+            <h2>Rp250.000 / malam</h2>
+            <a href="#booking" class="btn">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <section id="fasilitas">
+        <h2>Fasilitas Hotel</h2>
+        <div class="container">
+            <div class="card">
+                <h3>🛏️ Kamar Nyaman</h3>
+                <p>Kamar bersih dan nyaman untuk beristirahat.</p>
+            </div>
+
+            <div class="card">
+                <h3>❄️ AC</h3>
+                <p>Ruangan sejuk agar kamu semakin nyaman.</p>
+            </div>
+
+            <div class="card">
+                <h3>📶 Wi-Fi Gratis</h3>
+                <p>Akses internet untuk semua tamu hotel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kamar" class="room">
+        <h2>Kamar Kami</h2>
+        <div class="room-card">
+            <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                alt="Kamar Hotel Seruni">
+
+            <div class="room-info">
+                <h3>Standard Room</h3>
+                <p>Kamar nyaman untuk 1–2 orang.</p>
+                <p>Fasilitas: tempat tidur, AC, Wi-Fi, dan kamar mandi.</p>
+                <h2>Rp250.000 / malam</h2>
+                <a href="#booking" class="btn">Pilih Kamar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Reservasi Kamar</h2>
+
+        <form id="bookingForm">
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+
+            <label>Tanggal Check-in</label>
+            <input type="date" id="tanggal" required>
+
+            <label>Lama Menginap</label>
+            <select id="malam">
+                <option value="1">1 malam</option>
+                <option value="2">2 malam</option>
+                <option value="3">3 malam</option>
+                <option value="4">4 malam</option>
+                <option value="5">5 malam</option>
+            </select>
+
+            <button type="submit" class="btn">Hitung Total Harga</button>
+        </form>
+
+        <div id="hasil"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hotel Seruni. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
